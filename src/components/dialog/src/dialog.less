@@ -1,0 +1,68 @@
+.dialog-mask {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	overflow: hidden;
+	z-index: 2000;
+
+	.dialog-container {
+		width: 370px;
+    	height: 200px;
+		background: #fff;
+		border-radius: 5px;
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+		margin: auto;
+
+		.dialog-title {
+			width: 100%;
+		    height: 40px;
+		    line-height: 40px;
+		    text-align: left;
+		    padding-left: 15px;
+		    border-bottom: 1px solid #eee;
+		    font-size: 15px;
+			
+			span {
+				font-weight: 700;
+			}
+		}
+
+		.dialog-message {
+			padding: 10px 20px;
+		}
+        .dialog-content {
+          padding: 10px 20px;
+        }
+		.dialog-button {
+			position: absolute;
+		    width: 100%;
+		    height: 40px;
+		    line-height: 40px;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    border-top: 1px solid #eee;
+		    text-align: right;
+
+		    .btn {
+		    	margin-right: 10px;
+		    }
+		}
+		.show-input{
+			margin: 0 10px;
+		}
+	}
+}
